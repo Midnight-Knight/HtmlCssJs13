@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современные игровые приставки</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="JavaScript" type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a id="logo" href="#section-1"><img src="logo.png" alt="logo"></a>
+        <nav>
+            <a href="#home" >Главная</a>
+            <a href="#section-1" >Раздел 1</a>
+            <a href="#section-2" >Раздел 2</a>
+            <a href="#section-3" >Раздел 3</a> 
+        </nav>
+    </header>
+    <section id="home" onload="clock()">
+        <div>
+            <h4>Капча на JS</h4>
+            <div>
+                <div id="CaptPic"></div>
+                <button id="reb" onclick="gencap()">Reboot</button>
+            </div>
+            <div>
+                <input type="text" id="textcap">
+                <button id="entercap" onclick="entercap()">Enter</button>
+            </div>
+            <p id="stcap">
+                Введите капчу
+            </p>
+        </div>
+    </section>
+    <section id="section-1">
+        <h1>Трепещите! Сессия уже близко!</h1>
+        <div>
+            <div>
+                <h2 id="day"></h2>
+                <p>Дней</p>
+            </div>
+            <div>
+                <h2 id="hour"></h2>
+                <p>Часов</p>
+            </div>
+            <div>
+                <h2 id="minute"></h2>
+                <p>Минут</p>
+            </div>
+            <div>
+                <h2 id="second"></h2>
+                <p>Секунд</p>
+            </div>
+        </div>
+        <img id="sessiaimg" src="time.png" alt="time">
+    </section>
+    <section id="section-2">
+
+    </section>
+    <section id="section-3">
+
+    </section>
+    <footer>
+        <p>2022© Student MIREA. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
