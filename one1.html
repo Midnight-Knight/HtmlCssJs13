@@ -10,6 +10,7 @@
     <script language="JavaScript" type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
+    
     <header>
         <a id="logo" href="#section-1"><img src="logo.png" alt="logo"></a>
         <nav>
@@ -19,6 +20,7 @@
             <a href="#section-3" >Раздел 3</a> 
         </nav>
     </header>
+
     <section id="home" onload="clock()">
         <div>
             <h4>Капча на JS</h4>
@@ -58,10 +60,73 @@
         <img id="sessiaimg" src="time.png" alt="time">
     </section>
     <section id="section-2">
-
+        <div id="lupa">
+            <img id="lupaimg" src="lupa.png" alt="лупа" onclick="lupa()">
+            <input type="text" id="lupapoisk" placeholder="Поиск">
+            <button id="closeLupa" onclick="lupa()">X</button>
+        </div>
     </section>
     <section id="section-3">
+        <div id="cardimg" onclick="mouseClick()" onmouseover="mouseOn()"></div>
+        <div id="card" onmouseout="mouseOff()">
+            <p id="cardp">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Quod ipsa corporis, beatae necessitatibus facilis fugiat id nulla 
+                iusto libero doloribus.
+            </p>
+        </div>
+    </section>
+    <section id="section-4">
+        <div id="block">
+            <div>
+                <img src="youtube.png" alt="youtube">
+                <p id="ys"></p>
+                <h4>Просмотров</h4>
+            </div>
+            <div>
+                <img src="linkedin.png" alt="linkedin">
+                <p id="ls"></p>
+                <h4>Проектов</h4>
+            </div>
+            <div>
+                <img src="facebook.png" alt="facebook">
+                <p id="fs"></p>
+                <h4>Друзей</h4>
+            </div>
+            <div>
+                <img src="twitter.png" alt="twitter">
+                <p id="ts"></p>
+                <h4>Постов</h4>
+            </div>
+        </div>
+    </section>
+    <section id="section-5">
+        <div id="cardreg">
+            <h3>Логин</h3>
+            <div id="blocklog">
+                <img src="free-icon-envelope-482948.png" alt="email" id="textimg">
+                <input type="email" id="textlog">
+            </div>
+            <p id="at"></p>
+            <div id="blockpas">
+                <img src="free-icon-magnifier-2319177.png" alt="zamok" id="passimg">
+                <input type="password" id="passlog">
+            </div>
+            <p id="ap"></p>
+            <a id="qp">Забыли пароль?</a>
+            <button id="butreg" onclick="button()">
+                Войти
+            </button>
+            <div id="aka">
+                <p>Нет аккаунта?</p>
+                <a>Зарегистрируйтесь!</a>
+            </div>
+        </div>
+    </section>
+    <section id="section-6">
+        <div id="blockstar">
 
+        </div>
     </section>
     <footer>
         <p>2022© Student MIREA. ALL RIGHTS RESERVED</p>

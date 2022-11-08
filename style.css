@@ -303,3 +303,213 @@ section
     align-items: center;
 }
 
+/* section-2 */
+
+#lupa
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 0.5vmin solid rgb(86,86,212);
+    width: 4vmin; /* 30 */
+    height: 4vmin;
+    border-radius: 4vmin;
+    transition: 2s;
+}
+
+#lupapoisk
+{
+    width: 0vmin; /* 22 */
+    border: 0 solid rgba(0,0,0,0);
+    padding-left: 0; /* 1 */
+    opacity: 0;
+    transition: 2s;
+}
+
+#lupaimg
+{
+    width: 4vmin;
+    height: 4vmin;
+    transition: 2s;
+}
+
+#closeLupa
+{
+    width: 0vmin; /* 4 */
+    height: 0vmin; /* 4 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    opacity: 0;
+    transition: 2s;
+}
+
+/* section-3 */
+
+#card
+{
+    background: linear-gradient(45deg, rgb(255, 0, 208), rgb(225, 0, 255));
+    width: 30vmin;
+    height: 50vmin;
+    border-radius: 1vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 2s;
+    opacity: 0;
+}
+
+#cardimg
+{
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 30vmin;
+    border: 0.4vmin solid white;
+    background-image: url("Dennis_Ritchie.jpg");
+    background-size: cover;
+    margin: 2vmin;
+    z-index: 3;
+    transition: 2s;
+    position: absolute;
+    transform: translateY(-10vmin);
+}
+
+#cardp
+{
+    width: 26vmin;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    transition: 2s;
+    transform: translateY(10vmin);
+    opacity: 0;
+}
+
+/* section-4 */
+
+#block
+{
+    width: 80vmin;
+    height: 20vmin;
+    border-radius: 2vmin;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#block img
+{
+    width: 8vmin;
+    height: 8vmin;
+}
+
+#block > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vmin;
+}
+
+#block p
+{
+    font-size: 3vmin;
+}
+
+/* section-5 */
+
+#cardreg
+{
+    width: 35vmin;
+    height: 50vmin;
+    border-radius: 2vmin;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blocklog, #blockpas
+{
+    background-color: white;
+    border: 0.2vmin solid rgb(122,122,122);
+    border-radius: 1vmin;
+    box-shadow: 0 0.4vmin rgb(122,122,122);
+    height: 3vmin;
+    width: 30vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2vmin 0 0;
+}
+
+#textlog, #passlog
+{
+    border: 0 solid rgba(0,0,0,0);
+    width: 25vmin;
+    margin-left: 1vmin;
+}
+
+#textimg, #passimg
+{
+    width: 3vmin;
+    height: 3vmin;
+    margin-left: 1vmin;
+}
+
+#qp, #at, #ap
+{
+    width: 30vmin;
+    height: 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#qp
+{
+    margin: 1vmin 0;
+}
+
+#butreg
+{
+    width: 30vmin;
+    height: 6vmin;
+    border-radius: 1vmin;
+    background-color: rgb(55, 55, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#section-5 a
+{
+    color: rgb(55, 55, 228);
+}
+
+#aka
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vmin;
+}
+
+#at, #ap
+{
+    margin-top: 0.2vmin;
+    color: red;
+}
+
+/* section-6 */
