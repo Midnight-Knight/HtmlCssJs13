@@ -513,3 +513,78 @@ section
 }
 
 /* section-6 */
+
+#blockstar
+{
+    width: 50vmin;
+    height: 10vmin;
+    border-radius: 2vmin;
+    background-color: rgb(122,122,122);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rowstar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vmin;
+    width: 50vmin;
+}
+
+#rowstar > img
+{
+    width: 6vmin;
+    height: 6vmin;
+} 
+
+#glee
+{
+    color: yellow;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textstar, #butstar, #endblock, #butrer, #ret, #divret
+{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+#ret
+{
+    color: white;
+}
+
+#butret
+{
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+
+#endblock
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divret
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+

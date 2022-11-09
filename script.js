@@ -190,3 +190,160 @@ function button()
         window.open('https://www.google.ru', '_blank');
     }
 }
+
+/* section-6 */
+
+let boolstar = false;
+
+function starsOn(n)
+{
+    if (boolstar == false)
+    {
+        switch (n)
+        {
+            case 5:
+                document.getElementById('star-5').src = "free-icon-star-yel.png";
+            case 4:
+                document.getElementById('star-4').src = "free-icon-star-yel.png";
+            case 3:
+                document.getElementById('star-3').src = "free-icon-star-yel.png";
+            case 2:
+                document.getElementById('star-2').src = "free-icon-star-yel.png";
+            case 1:
+                document.getElementById('star-1').src = "free-icon-star-yel.png";
+        }
+    }
+}
+
+function starsOff(n)
+{
+    if (boolstar == false)
+    {
+        switch (n)
+        {
+            case 5:
+                document.getElementById('star-5').src = "free-icon-star-7073820.png";
+            case 4:
+                document.getElementById('star-4').src = "free-icon-star-7073820.png";
+            case 3:
+                document.getElementById('star-3').src = "free-icon-star-7073820.png";
+            case 2:
+                document.getElementById('star-2').src = "free-icon-star-7073820.png";
+            case 1:
+                document.getElementById('star-1').src = "free-icon-star-7073820.png";
+        }
+    }
+}
+
+function starsClickOn(n)
+{
+    if (boolstar == false)
+    {
+        switch (n)
+        {
+            case 5:
+                document.getElementById('star-5').src = "free-icon-star-yel.png";
+            case 4:
+                document.getElementById('star-4').src = "free-icon-star-yel.png";
+            case 3:
+                document.getElementById('star-3').src = "free-icon-star-yel.png";
+            case 2:
+                document.getElementById('star-2').src = "free-icon-star-yel.png";
+            case 1:
+                document.getElementById('star-1').src = "free-icon-star-yel.png";
+        }
+        boolstar = true;
+        document.getElementById("blockstar").style.height = "55vmin";
+        document.getElementById("blockstar").style.justifyContent = "flex-start";
+        document.getElementById("glee").style.width = "50vmin";
+        document.getElementById("glee").style.height = "10vmin";
+        document.getElementById("glee").style.opacity = "1";
+        switch (n)
+        {
+            case 5:
+                document.getElementById("glee").innerHTML = "ЭТО ПРЕКРАСНО";
+                break;
+            case 4:
+                document.getElementById("glee").innerHTML = "ЭТО ХОРОШО";
+                break;
+            case 3:
+                document.getElementById("glee").innerHTML = "ЭТО УДОЛЕТВОРИТЕЛЬНО";
+                break;
+            case 2:
+                document.getElementById("glee").innerHTML = "ЭТО ПЛОХО";
+                break;
+            case 1:
+                document.getElementById("glee").innerHTML = "ЭТО ОТВРАТИТЕЛЬНО";
+                break;
+        }
+        document.getElementById("textstar").style.height = "20vmin";
+        document.getElementById("textstar").style.width = "40vmin";
+        document.getElementById("textstar").style.opacity = "1";
+        document.getElementById("textstar").style.padding = "1vmin";
+
+        document.getElementById("butstar").style.height = "5vmin";
+        document.getElementById("butstar").style.width = "40vmin";
+        document.getElementById("butstar").style.opacity = "1";
+        document.getElementById("butstar").style.marginTop = "5vmin";
+    }
+}
+
+function startBut()
+{
+    document.getElementById('star-5').src = "free-icon-star-7073820.png";
+    document.getElementById('star-4').src = "free-icon-star-7073820.png";
+    document.getElementById('star-3').src = "free-icon-star-7073820.png";
+    document.getElementById('star-2').src = "free-icon-star-7073820.png";
+    document.getElementById('star-1').src = "free-icon-star-7073820.png";
+    document.getElementById("blockstar").style.height = "10vmin";
+    document.getElementById("blockstar").style.justifyContent = "center";
+    document.getElementById("glee").style.width = "0";
+    document.getElementById("glee").style.height = "0";
+    document.getElementById("glee").style.opacity = "0";
+
+    document.getElementById("textstar").style.height = "0";
+    document.getElementById("textstar").style.width = "0";
+    document.getElementById("textstar").style.opacity = "0";
+    document.getElementById("textstar").style.padding = "0";
+
+    document.getElementById("butstar").style.height = "0";
+    document.getElementById("butstar").style.width = "0";
+    document.getElementById("butstar").style.opacity = "0";
+    document.getElementById("butstar").style.marginTop = "0";
+
+    document.getElementById("rowstar").style.opacity = "0";
+    document.getElementById("rowstar").style.width = "0";
+    document.getElementById("rowstar").style.height = "0";
+
+    document.getElementById("endblock").style.opacity = "1";
+    document.getElementById("endblock").style.width = "10vmin";
+    document.getElementById("endblock").style.height = "50vmin";
+
+    document.getElementById("divret").style.opacity = "1";
+    document.getElementById("divret").style.height = "5vmin";
+    document.getElementById("divret").style.transform = "translate(24vmin,-2vmin)";
+    
+    document.getElementById("ret").style.opacity = "1";
+    document.getElementById("ret").style.width = "50vmin";
+    document.getElementById("ret").style.transform = "translate(12vmin,-4vmin)";
+}
+
+function retStar()
+{
+    boolstar = false;
+    document.getElementById("endblock").style.opacity = "0";
+    document.getElementById("endblock").style.width = "0";
+    document.getElementById("endblock").style.height = "0";
+
+    document.getElementById("divret").style.opacity = "0";
+    document.getElementById("divret").style.height = "0";
+    document.getElementById("divret").style.transform = "translate(0,0)";
+    
+    document.getElementById("ret").style.opacity = "0";
+    document.getElementById("ret").style.width = "0";
+    document.getElementById("ret").style.transform = "translate(0,0)";
+
+    document.getElementById("rowstar").style.opacity = "1";
+    document.getElementById("rowstar").style.width = "50vmin";
+    document.getElementById("rowstar").style.height = "10vmin";
+}
